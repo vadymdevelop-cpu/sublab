@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — SubLab</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --accent: #4334eb;
+      --accent-soft: #f2f0ff;
+      --text: #14141c;
+      --muted: #70717d;
+      --border: #e9e9f0;
+      --soft: #f7f7fb;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 85% 5%, rgba(67, 52, 235, .08), transparent 25%),
+        #fff;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "Segoe UI",
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+    }
+
+    .topbar {
+      padding: 24px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(30, 25, 80, .12);
+    }
+
+    .hero {
+      padding: 70px 0 50px;
+    }
+
+    .badge-custom {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      font-weight: 780;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .updated {
+      margin-top: 22px;
+      color: #9999a2;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .privacy {
+      margin-bottom: 70px;
+      padding: 50px;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      background: rgba(255,255,255,.95);
+      box-shadow: 0 24px 70px rgba(30,28,70,.07);
+    }
+
+    .intro {
+      padding: 24px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background: var(--soft);
+      color: #51525d;
+      line-height: 1.75;
+    }
+
+    .section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .number {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 14px;
+      border-radius: 11px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 23px;
+      letter-spacing: -.03em;
+      font-weight: 780;
+    }
+
+    .section p {
+      margin-bottom: 14px;
+      color: #51525d;
+      line-height: 1.8;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul {
+      margin: 15px 0;
+      color: #51525d;
+      line-height: 1.75;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .highlight {
+      margin-top: 20px;
+      padding: 22px;
+      border: 1px solid rgba(67,52,235,.12);
+      border-radius: 18px;
+      background: linear-gradient(135deg, #faf9ff, #f3f1ff);
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: #f7f7fb;
+      color: #666772;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact {
+      margin-top: 20px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .contact small {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+    }
+
+    .contact a {
+      font-weight: 750;
+    }
+
+    footer {
+      padding-bottom: 40px;
+      color: #9999a2;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        padding: 45px 0 35px;
+      }
+
+      .privacy {
+        padding: 25px;
+        border-radius: 26px;
+      }
+
+      .section {
+        padding: 28px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container page">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/icon.png" alt="SubLab">
+      SubLab
+    </a>
+  </header>
+
+  <section class="hero">
+
+    <div class="badge-custom">
+      <span class="badge-dot"></span>
+      Privacy
+    </div>
+
+    <h1>Privacy Policy</h1>
+
+    <p>
+      SubLab is designed with data minimization and privacy in mind. We do not sell your data,
+      use it for advertising, or track you across apps and websites. The core information about
+      your subscriptions is stored on your device and is not uploaded to SubLab-operated servers.
+    </p>
+
+    <div class="updated">
+      Last updated: September 6, 2026
+    </div>
+
+  </section>
+
+
+  <main class="privacy">
+
+    <div class="intro">
+      This Privacy Policy explains what data may be processed when you use SubLab,
+      where that data is stored, which third-party services may be used,
+      and what rights you may have under applicable law.
+    </div>
+
+
+    <section class="section">
+
+      <div class="number">1</div>
+
+      <h2>Data Stored by SubLab</h2>
+
+      <p>
+        Subscription information that you add to SubLab is stored locally on your device.
+        This information may include:
+      </p>
+
+      <ul>
+        <li>subscription and service names;</li>
+        <li>prices and currencies;</li>
+        <li>start, renewal, expiration, and future payment dates;</li>
+        <li>billing frequency;</li>
+        <li>free trial information;</li>
+        <li>auto-renewal settings;</li>
+        <li>reminder settings;</li>
+        <li>notes;</li>
+        <li>custom icons or images, if such features are used;</li>
+        <li>other details that you choose to add to a subscription.</li>
+      </ul>
+
+      <p>
+        SubLab does not use its own server to store this information,
+        and the developer does not have access to the contents of your subscription database.
+      </p>
+
+      <div class="highlight">
+        <p>
+          Your subscription data is intended to remain under your control.
+          We do not sell it, use it for targeted advertising,
+          or use it to build an advertising profile about you.
+        </p>
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">2</div>
+
+      <h2>Local Data Storage</h2>
+
+      <p>
+        SubLab stores data locally on your device using Apple system technologies,
+        including local application storage and, where applicable, Core Data
+        or similar Apple-provided storage mechanisms.
+      </p>
+
+      <p>
+        While data remains local to your device, it is not transmitted to the SubLab developer.
+        Deleting records inside the application or deleting the application itself may remove
+        locally stored data in accordance with iOS behavior.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">3</div>
+
+      <h2>iCloud and CloudKit</h2>
+
+      <p>
+        If iCloud synchronization is available in your version of SubLab and you enable it,
+        application data may also be stored and synchronized through your personal Apple account
+        using iCloud and/or CloudKit.
+      </p>
+
+      <p>
+        iCloud storage and related infrastructure are operated by Apple.
+        SubLab does not provide the developer with access to your personal iCloud account,
+        Apple Account password, or Apple payment information.
+      </p>
+
+      <p>
+        Availability, storage, synchronization, backup, and deletion of iCloud data may depend
+        on Apple policies, your account settings, available storage, internet connectivity,
+        and the status of Apple services.
+      </p>
+
+      <div class="notice">
+        If iCloud synchronization is not yet available in your current version of SubLab,
+        this section applies only after the relevant feature becomes available and is enabled.
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">4</div>
+
+      <h2>App Store Analytics</h2>
+
+      <p>
+        SubLab does not use its own third-party analytics SDK to track your activity inside the application.
+        To understand application performance, we may use analytics and reports made available by Apple
+        through App Store Connect.
+      </p>
+
+      <p>
+        Such information may include aggregated metrics relating to downloads, installations,
+        active devices, sessions, crashes, purchases, and other statistics that Apple makes
+        available to developers.
+      </p>
+
+      <p>
+        Some usage and diagnostic information is made available by Apple only in relation to users
+        who have chosen to share diagnostics and usage information with app developers through
+        Apple system settings.
+      </p>
+
+      <p>
+        We do not use this information to track you across apps or websites,
+        and SubLab does not use third-party advertising networks.
+      </p>
+
+      <div class="notice">
+        You can manage Apple's analytics-sharing settings through the privacy and analytics
+        settings available on your Apple device.
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">5</div>
+
+      <h2>Purchases and StoreKit</h2>
+
+      <p>
+        SubLab may use the Apple App Store and StoreKit to offer, process,
+        verify, and restore in-app purchases and access rights to paid features.
+      </p>
+
+      <p>
+        Payments are processed by Apple. SubLab does not receive your bank card number,
+        banking credentials, Apple Account password, or other complete payment information.
+      </p>
+
+      <p>
+        The application may receive technical purchase information from StoreKit
+        that is necessary to determine purchase status and provide purchased features,
+        such as product information, purchase type, and entitlement status.
+      </p>
+
+      <p>
+        Apple's processing of information is governed by Apple's own terms
+        and privacy policies.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">6</div>
+
+      <h2>Exchange Rates and Frankfurter API</h2>
+
+      <p>
+        SubLab may request reference exchange rates from the Frankfurter service
+        through <strong>api.frankfurter.dev</strong>.
+      </p>
+
+      <p>
+        SubLab sends only the technical parameters required to obtain an exchange rate,
+        such as base and target currency codes. Your subscription database, notes,
+        or full spending history do not need to be transmitted to Frankfurter
+        in order to perform a currency conversion request.
+      </p>
+
+      <p>
+        Public API infrastructure may process standard technical information associated
+        with a network request, such as an IP address and similar connection data,
+        according to the infrastructure provider's own privacy practices.
+      </p>
+
+      <p>
+        Exchange rates are provided for informational purposes and may differ
+        from the actual rate applied by a bank, payment provider,
+        or individual transaction.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">7</div>
+
+      <h2>Notifications</h2>
+
+      <p>
+        SubLab may use local iOS notifications to remind you about payments,
+        renewals, and the end of free trial periods.
+      </p>
+
+      <p>
+        Notification permission is controlled by you through iOS system settings.
+        You can disable notifications for SubLab at any time.
+      </p>
+
+      <p>
+        Information needed to generate local notifications is processed on your device
+        within the capabilities of iOS and does not require uploading your subscription
+        database to a SubLab server.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">8</div>
+
+      <h2>Information You Voluntarily Send to Us</h2>
+
+      <p>
+        If you contact us by email or another support channel,
+        we receive the information you voluntarily provide.
+        This may include your email address, name, message content,
+        attachments, and technical information you choose to include.
+      </p>
+
+      <p>
+        We use this information only to respond to your request,
+        provide support, review feedback, resolve technical issues,
+        or fulfill another purpose clearly associated with your request.
+      </p>
+
+      <p>
+        We do not use support communications for advertising profiling
+        and do not sell them to third parties.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">9</div>
+
+      <h2>Third-Party Services</h2>
+
+      <p>
+        Depending on the features and version of SubLab,
+        the following third-party services may be used:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Apple App Store / StoreKit</strong> — purchase processing,
+          purchase restoration, and entitlement verification;
+        </li>
+
+        <li>
+          <strong>Apple iCloud / CloudKit</strong> — optional data synchronization
+          through your Apple account, if such a feature is available and enabled;
+        </li>
+
+        <li>
+          <strong>Apple App Store Connect Analytics</strong> — aggregated statistics
+          and diagnostic information made available by Apple to developers;
+        </li>
+
+        <li>
+          <strong>Frankfurter API</strong> — obtaining reference exchange rates.
+        </li>
+      </ul>
+
+      <p>
+        Each third-party provider may process technical information
+        in accordance with its own terms and privacy policy.
+        We aim to use only services that are necessary for application functionality
+        and do not provide them with your subscription data unless necessary
+        for a specific function.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">10</div>
+
+      <h2>No Advertising or Cross-App Tracking</h2>
+
+      <p>
+        SubLab does not use your subscription data for advertising.
+        We do not sell or rent your personal data.
+      </p>
+
+      <p>
+        SubLab does not track your activity across apps and websites owned
+        by other companies for advertising or advertising-profile purposes.
+      </p>
+
+      <p>
+        If our data practices materially change, this Privacy Policy
+        and the privacy information provided in the App Store will be updated
+        before or together with the relevant change where required by applicable law
+        or Apple policies.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">11</div>
+
+      <h2>Third-Party Trademarks and Logos</h2>
+
+      <p>
+        SubLab may use names, colors, logos, and other identifiers
+        of popular subscription services to identify services
+        and provide a familiar visual presentation.
+      </p>
+
+      <p>
+        All trademarks, trade names, and logos remain the property
+        of their respective owners.
+      </p>
+
+      <p>
+        Unless expressly stated otherwise, use of such identifiers does not mean
+        that the relevant companies are affiliated with SubLab, sponsor the application,
+        endorse it, or are partners of SubLab.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">12</div>
+
+      <h2>Legal Bases for Processing</h2>
+
+      <p>
+        Where applicable law requires a legal basis for processing,
+        the relevant basis depends on the type of information
+        and the purpose for which it is processed.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Providing application functionality.</strong>
+          Local processing of subscription data, reminders, calculations,
+          and purchase verification is necessary to provide functions
+          that you request when using SubLab.
+        </li>
+
+        <li>
+          <strong>Consent.</strong>
+          Where a feature requires your permission, such as notifications
+          or Apple's system-level sharing of analytics information,
+          processing may depend on your choice and system settings.
+        </li>
+
+        <li>
+          <strong>Legitimate interests.</strong>
+          Where permitted by law, we may process support communications
+          that you voluntarily send to us for security, troubleshooting,
+          abuse prevention, and improving the application.
+        </li>
+
+        <li>
+          <strong>Legal obligations.</strong>
+          In limited circumstances, processing may be necessary
+          to comply with mandatory legal requirements.
+        </li>
+      </ul>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">13</div>
+
+      <h2>Your Rights</h2>
+
+      <p>
+        Depending on your location and applicable law,
+        including the GDPR for users in the European Economic Area,
+        you may have rights regarding your personal data.
+      </p>
+
+      <p>These rights may include the right to:</p>
+
+      <ul>
+        <li>request access to personal data that we actually hold about you;</li>
+        <li>correct inaccurate personal data;</li>
+        <li>request deletion of personal data;</li>
+        <li>restrict or object to certain processing where provided by law;</li>
+        <li>withdraw consent where processing is based on consent;</li>
+        <li>request data portability where applicable;</li>
+        <li>lodge a complaint with a competent data protection authority.</li>
+      </ul>
+
+      <div class="highlight">
+        <p>
+          Most subscription information is stored only on your device and,
+          if enabled, in your personal Apple iCloud account.
+          Because the SubLab developer does not have access to this information,
+          you manage and delete it directly through SubLab, your device,
+          or Apple's iCloud controls.
+        </p>
+      </div>
+
+      <p>
+        If you wish to exercise a right relating to information
+        that we can actually identify and control, such as support correspondence,
+        please contact us using the details below.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">14</div>
+
+      <h2>Deleting Your Data</h2>
+
+      <p>
+        Subscription data stored locally can be deleted directly within SubLab.
+        Deleting the application will also generally remove local application data
+        from your device, except for data that may be separately stored or synchronized
+        through Apple system services.
+      </p>
+
+      <p>
+        If iCloud synchronization is enabled, some data may remain in your Apple iCloud account
+        according to Apple's storage mechanisms and settings. Such data is managed
+        through the application, your device, and Apple tools available to you.
+      </p>
+
+      <p>
+        To request deletion of information that you voluntarily sent to us through support
+        and that we can identify, contact
+        <a href="mailto:vadym.develop@gmail.com">vadym.develop@gmail.com</a>.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">15</div>
+
+      <h2>Data Retention</h2>
+
+      <p>
+        Local subscription data remains on your device until you delete
+        the relevant records, application data, or the application itself.
+      </p>
+
+      <p>
+        Data synchronized through iCloud may remain in your Apple account
+        until you delete it or as otherwise determined by Apple's
+        storage mechanisms and policies.
+      </p>
+
+      <p>
+        Information contained in support communications is retained only
+        for as long as reasonably necessary to respond to your request,
+        resolve an issue, maintain appropriate records, protect security,
+        or comply with applicable legal obligations.
+      </p>
+
+      <p>
+        App Store Analytics data and reports are stored and processed by Apple
+        according to Apple's policies and are available to us only in the form
+        and for the period provided through App Store Connect.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">16</div>
+
+      <h2>Security</h2>
+
+      <p>
+        We aim to minimize the amount of information accessible to us
+        and, where possible, rely on Apple system security and local storage
+        rather than maintaining our own server-side subscription database.
+      </p>
+
+      <p>
+        However, no method of electronic storage, data transmission,
+        or software system can guarantee absolute security.
+      </p>
+
+      <p>
+        You are also responsible for the security of your device,
+        Apple Account, passcode, backups, and other access credentials.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">17</div>
+
+      <h2>Children</h2>
+
+      <p>
+        SubLab is not specifically designed to collect personal data from children,
+        and we do not knowingly request personal information from children
+        for advertising or profiling purposes.
+      </p>
+
+      <p>
+        Where applicable law requires parental or guardian consent
+        for the use of certain features or processing of personal data,
+        those requirements must be followed.
+      </p>
+
+      <p>
+        If you believe that personal information relating to a child
+        has been sent directly to us without an appropriate legal basis,
+        please contact us so that we can review the request.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">18</div>
+
+      <h2>International Data Processing</h2>
+
+      <p>
+        Some third-party providers, including Apple or infrastructure
+        used by third-party APIs, may process technical information
+        in countries other than your country of residence.
+      </p>
+
+      <p>
+        Such processing is carried out by the relevant provider
+        under its own terms, data-protection safeguards,
+        and applicable law.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">19</div>
+
+      <h2>Changes to This Privacy Policy</h2>
+
+      <p>
+        We may update this Privacy Policy from time to time,
+        for example when SubLab features, third-party services,
+        Apple requirements, or applicable laws change.
+      </p>
+
+      <p>
+        The current version will be published on this page,
+        and the “Last updated” date at the top of the page will be revised.
+      </p>
+
+      <p>
+        If a change materially affects the processing of personal data,
+        we will take any additional steps required by applicable law,
+        including providing notice or obtaining consent where necessary.
+      </p>
+
+    </section>
+
+
+    <section class="section">
+
+      <div class="number">20</div>
+
+      <h2>Contact and Data Controller</h2>
+
+      <p>
+        For privacy questions, deletion requests relating to information
+        that we actually hold, or to exercise applicable data-protection rights,
+        you can contact the data controller:
+      </p>
+
+      <div class="contact">
+        <small>Data Controller</small>
+
+        <strong>Vadym Lynnyk</strong><br>
+        Nitra, Slovakia<br>
+
+        <a href="mailto:vadym.develop@gmail.com">
+          vadym.develop@gmail.com
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <span>
+        © 2026 SubLab. All rights reserved.
+      </span>
+
+      <div class="footer-links">
+
+        <a href="terms.html">
+          Terms of Use
+        </a>
+
+        <a href="https://forms.gle/F3NkNM9yK8NjT1qaA">
+          Support
+        </a>
+
+        <a href="index.html">
+          Home
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+</html>

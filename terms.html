@@ -1,0 +1,775 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Use — SubLab</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --accent: #4334eb;
+      --accent-soft: #f2f0ff;
+      --text: #14141c;
+      --muted: #70717d;
+      --border: #e9e9f0;
+      --soft: #f7f7fb;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 85% 5%, rgba(67, 52, 235, .08), transparent 25%),
+        #fff;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "Segoe UI",
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+    }
+
+    .topbar {
+      padding: 24px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(30, 25, 80, .12);
+    }
+
+    .hero {
+      padding: 70px 0 50px;
+    }
+
+    .badge-custom {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      margin-bottom: 20px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      font-weight: 780;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .updated {
+      margin-top: 22px;
+      color: #9999a2;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .terms {
+      margin-bottom: 70px;
+      padding: 50px;
+      border: 1px solid var(--border);
+      border-radius: 34px;
+      background: rgba(255,255,255,.95);
+      box-shadow: 0 24px 70px rgba(30,28,70,.07);
+    }
+
+    .intro {
+      padding: 24px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background: var(--soft);
+      color: #51525d;
+      line-height: 1.75;
+    }
+
+    .section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .number {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 14px;
+      border-radius: 11px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 23px;
+      letter-spacing: -.03em;
+      font-weight: 780;
+    }
+
+    .section p {
+      margin-bottom: 14px;
+      color: #51525d;
+      line-height: 1.8;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul {
+      margin: 15px 0;
+      color: #51525d;
+      line-height: 1.75;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .highlight {
+      margin-top: 20px;
+      padding: 22px;
+      border: 1px solid rgba(67,52,235,.12);
+      border-radius: 18px;
+      background: linear-gradient(135deg, #faf9ff, #f3f1ff);
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: #f7f7fb;
+      color: #666772;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact {
+      margin-top: 20px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .contact small {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+    }
+
+    .contact a {
+      font-weight: 750;
+    }
+
+    footer {
+      padding-bottom: 40px;
+      color: #9999a2;
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 25px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        padding: 45px 0 35px;
+      }
+
+      .terms {
+        padding: 25px;
+        border-radius: 26px;
+      }
+
+      .section {
+        padding: 28px 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="container page">
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="assets/icon.png" alt="SubLab">
+      SubLab
+    </a>
+  </header>
+
+  <section class="hero">
+
+<div class="badge-custom">
+  <span class="badge-dot"></span>
+  Legal information
+</div>
+
+<h1>Terms of Use</h1>
+
+<p>
+  These Terms of Use govern your access to and use of the SubLab application.
+  By using SubLab, you agree to comply with these Terms and all applicable laws.
+</p>
+
+<div class="updated">
+  Last updated: September 6, 2026
+</div>
+
+  </section>
+
+  <main class="terms">
+
+<div class="intro">
+  SubLab is an application for independently tracking subscriptions,
+  free trials, recurring payments, and reminders. SubLab is not a bank,
+  payment provider, subscription provider, or official representative
+  of the services that users add to the application.
+</div>
+
+
+<section class="section">
+
+  <div class="number">1</div>
+
+  <h2>Use of the Application</h2>
+
+  <p>
+    SubLab may only be used for lawful purposes and in accordance with
+    these Terms, applicable law, and the rules of the Apple platform.
+  </p>
+
+  <p>You may not:</p>
+
+  <ul>
+    <li>
+      use the application for unlawful, fraudulent, or misleading activities;
+    </li>
+
+    <li>
+      infringe copyrights, trademarks, or other intellectual property rights;
+    </li>
+
+    <li>
+      copy, modify, distribute, resell, or commercially exploit elements of
+      SubLab without permission, except where expressly permitted by law;
+    </li>
+
+    <li>
+      attempt to gain unauthorized access to the application,
+      its infrastructure, or related services;
+    </li>
+
+    <li>
+      interfere with the normal operation of SubLab or use the application
+      in a way that may harm other users, the developer, or third parties.
+    </li>
+  </ul>
+
+  <p>
+    The original software code, interface, design, text, and other elements
+    of SubLab are protected by applicable copyright and intellectual
+    property laws.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">2</div>
+
+  <h2>In-App Purchases</h2>
+
+  <p>
+    SubLab may offer paid access to additional features, including
+    one-year access and lifetime access.
+  </p>
+
+  <p>
+    Purchases made through the App Store are processed by Apple.
+    Payments, purchase confirmation, refunds, and other transaction-related
+    matters are governed by the applicable Apple terms and policies.
+  </p>
+
+  <p>
+    The current price is always displayed before purchase confirmation
+    in the App Store and may vary depending on country, currency, taxes,
+    and other factors.
+  </p>
+
+  <div class="notice">
+    Lifetime access means that the relevant purchase within SubLab has no
+    predefined expiration date. It does not guarantee the indefinite
+    existence of the application, the App Store, the operating system,
+    or any third-party services.
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">3</div>
+
+  <h2>SubLab Does Not Cancel or Manage Subscriptions</h2>
+
+  <p>
+    SubLab is solely a <strong>subscription tracker</strong>.
+    The application allows users to manually store information about
+    subscriptions, payments, free trials, and renewal dates.
+  </p>
+
+  <p>
+    SubLab does not create, renew, modify, suspend, or cancel actual
+    subscriptions to third-party services.
+  </p>
+
+  <p>
+    Deleting a subscription from SubLab, changing a date, disabling a reminder,
+    or deleting the application <strong>does not cancel your actual subscription</strong>
+    with the relevant service provider.
+  </p>
+
+  <p>
+    To cancel or modify a subscription, users must contact the relevant
+    service provider directly or use the subscription management tools
+    provided by Apple where applicable.
+  </p>
+
+  <div class="highlight">
+
+    <p>
+      Information displayed in SubLab may be inaccurate, incomplete,
+      or outdated. This includes, among other things, prices, payment dates,
+      billing intervals, free trial expiration dates, renewal dates,
+      and projected future payments.
+    </p>
+
+    <p>
+      Users are solely responsible for verifying the actual terms
+      of their subscriptions with the relevant provider.
+    </p>
+
+    <p>
+      SubLab also does not guarantee delivery of every notification.
+      Notification delivery may depend on iOS settings, user permissions,
+      system restrictions, and other factors.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">4</div>
+
+  <h2>Currency Conversion and Calculations</h2>
+
+  <p>
+    SubLab may use third-party APIs and services to obtain exchange rates
+    and convert amounts between different currencies.
+  </p>
+
+  <p>
+    Such exchange rates may be delayed, differ from bank or payment provider
+    rates, or differ from the actual rate applied to a specific transaction.
+  </p>
+
+  <p>
+    Converted amounts, monthly spending estimates, yearly projections,
+    and other calculations are approximate and are provided for
+    informational purposes only.
+  </p>
+
+  <p>
+    To the maximum extent permitted by law, SubLab is not responsible
+    for inaccuracies in exchange rates or errors resulting from
+    third-party data providers.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">5</div>
+
+  <h2>Third-Party Services</h2>
+
+  <p>
+    SubLab may use third-party services, platforms, APIs, libraries,
+    and infrastructure for analytics, crash diagnostics, currency conversion,
+    data storage or synchronization, delivery of individual features,
+    and other technical purposes.
+  </p>
+
+  <p>
+    These services are independent from SubLab and may have their own
+    terms of use and privacy policies.
+  </p>
+
+  <p>
+    To the maximum extent permitted by law, we are not responsible for
+    the availability, actions, content, security, or privacy practices
+    of third-party services.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">6</div>
+
+  <h2>Third-Party Trademarks and Logos</h2>
+
+  <p>
+    SubLab may display the names, logos, trademarks, and other identifiers
+    of third-party services for subscription identification and visual
+    presentation within the application.
+  </p>
+
+  <p>
+    All such trademarks, logos, and names belong to their respective owners.
+  </p>
+
+  <p>
+    Their use within SubLab does not imply any partnership, sponsorship,
+    endorsement, support, or other official relationship between SubLab
+    and the relevant companies unless expressly stated otherwise.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">7</div>
+
+  <h2>Availability and Changes</h2>
+
+  <p>
+    We may update, improve, modify, add, or remove individual SubLab features
+    at any time.
+  </p>
+
+  <p>
+    We may also temporarily suspend individual features or discontinue
+    the application or any part of it entirely.
+  </p>
+
+  <p>
+    We do not guarantee permanent availability of all features on every
+    device, every version of iOS, or in every country or region.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">8</div>
+
+  <h2>iCloud and Synchronization</h2>
+
+  <p>
+    Certain versions of SubLab may use Apple services, including iCloud
+    or CloudKit, to synchronize data.
+  </p>
+
+  <p>
+    Synchronization depends on Apple infrastructure, internet connectivity,
+    the user's Apple Account, iCloud settings, available storage,
+    the iOS version, and other factors outside SubLab's control.
+  </p>
+
+  <p>
+    We do not guarantee uninterrupted, immediate, or completely error-free
+    synchronization between devices.
+  </p>
+
+  <p>
+    Apple services may be temporarily unavailable, modified, restricted,
+    or discontinued in accordance with Apple's terms and policies.
+  </p>
+
+  <p>
+    Users are responsible for properly configuring their Apple Account
+    and, where appropriate, maintaining backups of important data.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">9</div>
+
+  <h2>Privacy</h2>
+
+  <p>
+    Your use of SubLab is also governed by our Privacy Policy,
+    which describes what information may be processed by the application,
+    how it is used, and how it is protected.
+  </p>
+
+  <p>
+    <a href="YOUR_PRIVACY_POLICY_URL">
+      Privacy Policy
+    </a>
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">10</div>
+
+  <h2>SubLab Intellectual Property</h2>
+
+  <p>
+    Except for third-party materials and identifiers, all rights to
+    the software code, original design, structure, text, interface,
+    and branding of SubLab belong to the developer or are used lawfully.
+  </p>
+
+  <p>
+    Use of the application does not transfer ownership rights in SubLab
+    or any of its elements to the user.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">11</div>
+
+  <h2>Support</h2>
+
+  <p>
+    We aim to provide useful support to users, but we do not guarantee
+    a specific response time, continuous availability of support,
+    or the ability to resolve every issue.
+  </p>
+
+  <div class="contact">
+    <small>Contact us</small>
+
+    <a href="mailto:hello@getsubo.app">
+      hello@getsubo.app
+    </a>
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">12</div>
+
+  <h2>Disclaimer of Warranties and Limitation of Liability</h2>
+
+  <p>
+    To the maximum extent permitted by law, SubLab is provided
+    <strong>“as is”</strong> and <strong>“as available”</strong>
+    without warranties of any kind, whether express or implied.
+  </p>
+
+  <p>
+    We do not guarantee that the application will always operate
+    continuously, without errors or delays, that all displayed data
+    and calculations will be fully accurate, or that notifications
+    will always be delivered on time.
+  </p>
+
+  <p>
+    To the maximum extent permitted by law, the developer of SubLab
+    is not liable for any indirect, incidental, consequential, special,
+    exemplary, or punitive damages, or for any loss of data, profits,
+    revenue, business, goodwill, or anticipated savings arising from
+    your use of SubLab or inability to use it.
+  </p>
+
+  <p>
+    In particular, we are not responsible for actual charges made by
+    third-party services, missed subscription cancellations, changes
+    in subscription prices, inaccurate exchange rates, undelivered
+    system notifications, incorrect data entered by the user,
+    or failures of third-party services.
+  </p>
+
+  <div class="highlight">
+    <p>
+      Nothing in these Terms excludes or limits liability where such
+      exclusion or limitation is prohibited by law, including mandatory
+      consumer rights and other rights that cannot lawfully be waived
+      or restricted.
+    </p>
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">13</div>
+
+  <h2>Changes to These Terms</h2>
+
+  <p>
+    We may update these Terms of Use from time to time.
+  </p>
+
+  <p>
+    The current version of the Terms will be published on this page
+    together with the date of the latest update.
+  </p>
+
+  <p>
+    By continuing to use SubLab after the updated Terms take effect,
+    you agree to the revised Terms to the extent permitted
+    by applicable law.
+  </p>
+
+</section>
+
+
+<section class="section">
+
+  <div class="number">14</div>
+
+  <h2>Governing Law and Jurisdiction</h2>
+
+  <p>
+    These Terms of Use are governed by the laws of the Netherlands,
+    unless mandatory consumer protection laws applicable in your country
+    of residence provide otherwise.
+  </p>
+
+  <p>
+    Any disputes related to these Terms or the use of SubLab shall be
+    submitted to the competent courts of the Netherlands, unless applicable
+    mandatory law gives you the right to bring a claim before a court
+    or other competent authority in another jurisdiction.
+  </p>
+
+</section>
+
+  </main>
+
+  <footer>
+
+<div class="footer-inner">
+
+  <span>
+    © 2026 SubLab. All rights reserved.
+  </span>
+
+  <div class="footer-links">
+
+    <a href="policy.html">
+      Privacy Policy
+    </a>
+
+    <a href="https://forms.gle/F3NkNM9yK8NjT1qaA">
+      Support
+    </a>
+
+    <a href="index.html">
+      Home
+    </a>
+
+  </div>
+
+</div>
+
+
+  </footer>
+
+</div>
+
+</body>
+</html>
